@@ -14,7 +14,7 @@ namespace lab07_miya
 
             Console.WriteLine((int)Sample.Razor);
 
-            List<string> shoppingList = new List<string>();
+            Inventory<string> shoppingList = new Inventory<string>();
             shoppingList.Add("wok");
             shoppingList.Add("mouthwash");
             shoppingList.Add("nailPolish");
@@ -34,17 +34,19 @@ namespace lab07_miya
 
             //what is a collection initializer?
 
-            shoppingList.RemoveAt(6);
-            shoppingList.RemoveAt(shoppingList.IndexOf("wok"));
+            shoppingList.Remove("wok");
+            shoppingList.Remove("scarf");
 
             foreach(string s in shoppingList)
             {
                 Console.WriteLine(s);
             }
 
-            Inventory<Product> wishList = new Inventory<Product>();
-            wishList.Add(new Product { ShopList = Sample.HandSoap});
-            wishList.Add(new Product { ShopList = Sample.ShowerHead});
+            Inventory<Product> wishList = new Inventory<Product> { };
+
+            Inventory<Product> secretList = new Inventory<Product>();
+            secretList.Add(new Product { ShopList = Sample.HandSoap});
+            secretList.Add(new Product { ShopList = Sample.ShowerHead});
 
             Console.Read();
         }
