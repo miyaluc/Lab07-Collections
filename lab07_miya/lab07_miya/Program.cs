@@ -10,10 +10,7 @@ namespace lab07_miya
             Console.WriteLine("Hello World!");
 
             Sample buyMe = new Sample();
-            Console.WriteLine(buyMe);
-
-            Console.WriteLine((int)Sample.Razor);
-
+           
             Inventory<string> shoppingList = new Inventory<string>();
             shoppingList.Add("wok");
             shoppingList.Add("mouthwash");
@@ -47,6 +44,8 @@ namespace lab07_miya
             Inventory<Product> secretList = new Inventory<Product>();
             secretList.Add(new Product { ShopList = Sample.HandSoap});
             secretList.Add(new Product { ShopList = Sample.ShowerHead});
+
+            Product shavingCream = new Product();
 
             Console.Read();
         }

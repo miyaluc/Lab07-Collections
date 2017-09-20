@@ -17,24 +17,22 @@ namespace lab07_miya
         }
         public void Remove(S product)
         {
+            S[] filler = new S[count - 1];
+            int fillerNumber = 0;
 
-            //products[count] = product;
-            //count--;
-
-            //S[] temp = new S[count - 1];
-            //int i = 0;
-            //int j = 0;
-
-            //while (i < temp.Length)
-            //{
-            //    if(i != removeItem)
-            //    {
-            //        temp[j] = products[i];
-            //        j++;
-            //    }
-            //    i++;
-            //}
-            //return temp;
+            foreach(S d in products)
+            {
+                if(d != null)
+                {
+                    if(!d.Equals(product))
+                    {
+                        filler[fillerNumber] = d;
+                        fillerNumber++;
+                    }
+                }
+            }
+            products = filler;
+            count--;
         }
         public IEnumerator<S> GetEnumerator()
         {
