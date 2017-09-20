@@ -1,28 +1,12 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) Lab 7 : Collections Practice
 =====================================
 
-## To Submit this Assignment
-- fork this repository
-- write all of your code in a directory named `lab-#`; + `<your name>` **e.g.** `lab05-amanda`
-- push to your repository
-- submit a pull request to this repository
-- submit a link to your PR in canvas
-
-## Directions
-- Create a custom generic list for an e-commerce store to hold their inventory of products
-  - *Hint: Your generic collection should be Inventory\<Product>*
-- Include an enum in your *Product*
-- Make sure the generic has the functionality to use a foreach loop.
-- Your generic collection sould `Add()`, `Remove()` items in the collection
-- **Stretch** - if there is time, make it so you can `ViewAll` and create a method to output all items to the console
-- Add at least 10 items to your List, and output them to the console.
-    - Add some items through the `Add()` Method, and others through a *collection initializer* 
 ## ReadMe
 - Your readme should include the following information:
-	- How long did it take you to complete this assignment?
-	- What did you struggle with? Why? How did you solve?
-	- What did you learn during this assignment?
-    - What resources did you utilize for this assingment?
+	- How long did it take you to complete this assignment? about 1.5 hours
+	- What did you struggle with? Why? How did you solve? I struggled with how to add a remove method but ended up using the RemoveAt() method.
+	- What did you learn during this assignment? I learned that I could benefit from having access to yesterday's lecture videos while doing the code assignments in the morning.
+    - What resources did you utilize for this assingment? I utilized the class demo, peers' advice, and TA assistance
 
 ## Rubric
 - 3pts: Application runs without any errors
